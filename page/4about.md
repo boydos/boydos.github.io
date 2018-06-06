@@ -39,6 +39,6 @@ C#、Python、Shell 等多种编程语言,曾独立完成专用综合信息发�
 
 ~欢迎使用~
 
-## Comments
+## 评论
 
 {% include comments.html %}
