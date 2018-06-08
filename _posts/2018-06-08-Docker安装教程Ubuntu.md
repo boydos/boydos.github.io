@@ -79,34 +79,36 @@ $ sudo apt-get install \
 验证密钥指纹是否为 `9DC8 5822 9FC7 DD38 854A E2D8 8D81 803C 0EBF CD88`。
 ```sh
  $ sudo apt-key fingerprint 0EBFCD88
-
  pub   4096R/0EBFCD88 2017-02-22
        Key fingerprint = 9DC8 5822 9FC7 DD38 854A  E2D8 8D81 803C 0EBF CD88
  uid                  Docker Release (CE deb) <docker@docker.com>
  sub   4096R/F273FCD8 2017-02-22
 ``` 
 4. 使用下列命令设置 stable 镜像仓库。您始终需要使用 stable 镜像仓库，即使您还需要通过 edge 或 testing 镜像仓库安装构建也是如此。如需添加 edge 或 testing 镜像仓库，请在以下命令中的词 stable 之后添加词 edge 和/或 testing。
-
 > **注：下面的 lsb_release -cs 子命令用于返回您的 Ubuntu 分发版，例如 xenial**。
 > 
 > 有时，在 Linux Mint 等分发版中，您可能必须将 $(lsb_release -cs) 更改为您的父代 Ubuntu 分发版。例 如：如果您使用的是 Linux Mint Rafaela，您可以使用 trusty。
 
-
 amd64:
+
 ```sh 
  $ sudo add-apt-repository \
     "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
     stable"
 ``` 
+
 armhf：
+
 ```sh 
  $ sudo add-apt-repository \
     "deb [arch=armhf] https://download.docker.com/linux/ubuntu \
     $(lsb_release -cs) \
     stable"
 ``` 
+
 s390x：
+
 ```sh 
  $ sudo add-apt-repository \
     "deb [arch=s390x] https://download.docker.com/linux/ubuntu \
@@ -131,7 +133,6 @@ s390x：
 3. 在生产系统中，您应该安装特定版本的 Docker CE，而不是始终使用最新版本。此输出将被截断。列出可用版本。
 ```sh 
  $ apt-cache madison docker-ce
-
  docker-ce | 17.06.0~ce-0~ubuntu-xenial | https://download.docker.com/linux/ubuntu xenial/stable amd64 Packages
 ``` 
 此列表的内容取决于启用了哪些镜像仓库，并且将特定于您的 Ubuntu 版本（在本示例中，由版本中的 xenial 后缀表示）。选择一个特定版本进行安装。第二列为版本字符串。第三列为镜像仓库名称，它表示软件包来自哪个镜像仓库并按扩展其稳定性级别列出。如需安装特定版本，请将版本字符串附加到软件包名称，并使用等号 (=) 分隔它们：
@@ -140,7 +141,6 @@ s390x：
 ``` 
 Docker 守护进程将自动启动。
 4. 验证是否正确安装了 Docker CE，方法是运行 hello-world 镜像。
-
 ```sh 
  $ sudo docker run hello-world
 ``` 
@@ -150,7 +150,6 @@ Docker CE 已安装并且正在运行。您需要使用 sudo 运行 Docker 命�
 
 ##### 升级 DOCKER CE
 如需升级 Docker CE，首先运行 `sudo apt-get update`，然后按照[安装说明](https://docs.docker-cn.com/engine/installation/linux/docker-ce/ubuntu/)执行操作，并选择您要安装的新版本。
-
 
 #### 从软件包进行安装
 如果您无法使用 Docker 镜像仓库安装 Docker CE，可以下载适用于您的版本的 .deb 文件，并手动进行安装。每次要升级 Docker CE 时，您都需要下载一个新文件。
