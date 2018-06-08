@@ -9,10 +9,9 @@ type: page
 * content
 {:toc}
 
-童东生 | 男 | 硕士 | 1989 年 9 月| 3-5 年开发经验 | 党员 | 现居住于北京
+童东生 | 男 | 硕士 | 1989 年 9 月| 3-5 年开发经验 | 党员 | 现居住于北京 | GitHub：[https://github.com/boydos](https://github.com/boydos)
 ## 关于我
 
-<iframe src="https://githubbadge.appspot.com/boydos?s=1" style="border: 0;height: 142px;width: 200px;overflow: hidden;" frameBorder="0"></iframe>
 熟练掌握 JAVA 开发技术,定位于互联网后端全栈开发,对构建高可用、高并发、易扩展的分布式系统有一定实践经验。熟悉 C、
 C#、Python、Shell 等多种编程语言,曾独立完成专用综合信息发布系统、专用富媒体发布系统、专用应用安全检测发布系统以及
 实时数据分析预测系统的设计、开发、部署以及维护工作。

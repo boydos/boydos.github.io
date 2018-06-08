@@ -39,11 +39,11 @@
                     width: 135px;
                 }
                 .title {
-                    font-weight: bold;
-                    color: #223253;
+                    /* font-weight: bold; */
+                    color: #222223;
                     transition: 0.3s ease;
                     &:hover {
-                        color: #4d6dad;
+                        color: #8f1f1f;
                     }
                 }
                 i {
@@ -67,19 +67,19 @@
                 }
                 .pageTag {
                     i {
-                        color: #c6cbe9;
+                        color: #9a9a9a;
                     }
                     a {
 
                         // border: 1px solid #aaa;
                         padding: 0 5px;
-                        background-color: #c6cbe9;
+                        background-color: #fff;
                         border-radius: 4px;
-                        color: #fff;
+                        color: #727272;
                         font-size: 90%;
                         transition: 0.3s ease;
                         &:hover {
-                            background-color: #c0ddc7;
+                            color: #8f1f1f;
                         }
                     }
                 }
@@ -124,10 +124,10 @@
                 font-weight: bold;
             }
             a {
-                color: #4d6dad;
+                color: #05080e;
                 transition: 0.5s ease;
                 &:hover {
-                    color: #223253;
+                    color: #8f1f1f;
                 }
             }
         }
